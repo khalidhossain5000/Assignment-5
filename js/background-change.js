@@ -9,3 +9,9 @@ document.getElementById('background-change-btn')
     body.style.backgroundColor=rgbColor;
     
 })
+
+//adding blog page when clicking this-->
+document.getElementById('blog-btn')
+.addEventListener('click',function(){
+    window.location.href='./blog.html'
+})
