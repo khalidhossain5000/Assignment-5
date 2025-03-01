@@ -1,4 +1,3 @@
- 
 completedEvent('card-btn-1','card-1-title');
 completedEvent('card-btn-2','card-2-title');
 completedEvent('card-btn-3','card-3-title');
@@ -8,4 +7,11 @@ completedEvent('card-btn-6','card-6-title');
  //ALL TASK COMPLETED ALERT-->
  document.getElementById('card-btn-6').addEventListener('click',function(){
     alert("Congrats!!!You have completed all the current task")
+})
+
+//clear history when click on button functionalities-->
+let allHistoryContainer=document.getElementById('activity-history');
+document.getElementById('clear-history-btn')
+.addEventListener('click',function(){
+    allHistoryContainer.innerText=" ";
 })
