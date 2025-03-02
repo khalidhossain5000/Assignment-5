@@ -29,6 +29,9 @@
         .card-bg {
             background-color: #f4f7ff;
         }
+        .line-height{
+            line-height: 39px;
+        }
     </style>
 </head>
 <body class="poppins-font container mx-auto bg-[#f4f7ff]">
@@ -48,50 +51,112 @@
         <!-- qna  -->
         <section class="space-y-6">
             <!-- card-1  -->
-             <div class="bg-white py-5 px-9 rounded-lg">
+             <div class="bg-white py-5  rounded-lg">
                 <!-- title  -->
-                 <div class="border-b-3 border-dotted border-r-emerald-700 ">
-                    <h2 class="text-2xl text-[#232931] font-bold py-6">what is html</h2>
+                 <div class="border-b-2 border-dashed border-gray-300 px-9">
+                    <h2 class="text-2xl text-[#232931] font-bold py-6">Question-1: What are the different ways to select an element in the DOM?
+                    </h2>
                  </div>
                  <!-- ans  -->
-                  <p class="text-xl font-medium text-[#9da3a8] py-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio corrupti cumque eaque, atque ea inventore earum ab aut maxime odit quis tenetur, beatae reiciendis similique illo tempore ex sint!</p>
-             </div>            
-             <!-- card-2  -->
-             <div class="bg-white py-5 px-9 rounded-lg">
-                <!-- title  -->
-                 <div class="border-b-3 border-dotted border-r-emerald-700 ">
-                    <h2 class="text-2xl text-[#232931] font-bold py-6">what is html</h2>
-                 </div>
-                 <!-- ans  -->
-                  <p class="text-xl font-medium text-[#9da3a8] py-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio corrupti cumque eaque, atque ea inventore earum ab aut maxime odit quis tenetur, beatae reiciendis similique illo tempore ex sint!</p>
+                  <p class="line-height text-xl font-medium text-[#9da3a8] text-gray-600 py-6 px-9 "><span class="text-[30px] text-gray-900 font-bold">There are several ways to select an element in the DOM(Document Object Model) These Are: </span>
+                  </span> <br>
+                    <span class="font-bold text-black">1.Tag Name(getElementsByTagName):</span>in Javascript we can use Tag Name to access an element.For that we have to use getElementsByTagName('tagName'). <br>
+                    <span class="font-bold text-gray-900">02.By Id(getElementById):</span>We can select an element using it's Id.For that we have to use getElementById('id') in js.   <br>
+                    <span class="font-bold text-gray-900">03.By ClassName(getElementsByClassName):</span>We can select an element using it's ClassName.For that we have to use getElementsByClassName('ClassName') in js.This will provide us a html collection with all element that is using this ClassName. <br>
+                    <span class="font-bold text-gray-900">04.By querySelector(querySelector):</span>We can select an element by css selector for that we can use querySelector('selector').This will give us the first element using that selector. <br>
+                    <span class="font-bold text-gray-900">05.By querySelectorAll(querySelectorAll):</span>We can select an element by css selector for that we can use querySelectorAll('selector').This will give us all the element using and matching that selector. <br>
+                    <span class="text-xl text-gray-700 font-bold">These are the most used and popular way to select an element in the DOM.</span>
+                  </p>
              </div>           
-              <!-- card-3  -->
-             <div class="bg-white py-5 px-9 rounded-lg">
+         <!-- card-2  -->
+             <div class=" bg-[#ddd] py-5  rounded-lg">
                 <!-- title  -->
-                 <div class="border-b-3 border-dotted border-r-emerald-700 ">
-                    <h2 class="text-2xl text-[#232931] font-bold py-6">what is html</h2>
+                 <div class="border-b-2 border-dashed border-gray-300 px-9">
+                    <h2 class="text-2xl text-[#232931] font-bold py-6">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </h2>
                  </div>
                  <!-- ans  -->
-                  <p class="text-xl font-medium text-[#9da3a8] py-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio corrupti cumque eaque, atque ea inventore earum ab aut maxime odit quis tenetur, beatae reiciendis similique illo tempore ex sint!</p>
-             </div>            
+                <table class="w-[95%] border-1 border-l-gray-500 rounded-md mx-auto border-collapse">
+                    <thead class="bg-red-400 text-2xl">
+                        <tr>
+                            <th class="py-5 px-3 border-r border-blue-800">Sl</th>
+                            <th class="py-5 px-3 border-r border-blue-800">innerHTML</th>
+                            <th class="py-5 px-3 border-r border-blue-800">innerText</th>
+                            <th class="py-5 px-3 border-r border-blue-800">textContent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-blue-300">
+                            <td class="border-r py-5 px-3 text-xl font-bold text-black">01</td>
+                            <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">innerHTML is a Javascript Property that gets or sets the HTML content of an element.It means we can access a html structure from an element,including HTML Tag(like-p,div,h1 etc..) or we can set or create a html structure using innerHTML.</td>
+                            <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">innerText is a Javascript Property that gets the inner text from an element also we can set Text inside of an element using innerText property.It means by using innerText we can get all the text from an element and set text inside an element.</td>
+                            <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">textContent is a Javascript Property that gets all the content from an element including spacing,hidden text but it gives it without tag also we can set text or content inside an element using textContent Property.it only returns us with raw text.</td>
+                        </tr>          
+                        <tr class="bg-gray-300">
+                            <td class="border-r py-5 px-3 text-xl font-bold text-black">02</td>
+                            <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">innerHTML can get all the content including html tag from an element and also can set html tag to an element.</td>
+                            <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">innerText only gets the text from an element ,it can not get html tag and it only can set text inside an element.</td>
+                            <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">textContent gets all content from an element including spacing and hidden text and it gives raw text without html tag and it also can set content inside an element. </td>
+                        </tr> 
+                    </tbody>
+                </table>
+                <div class="mt-5 mx-9">
+                    <span class="mt-9 text-2xl text-gray-900 font-bold">These are some differences between these three Javascript Property</span>
+                </div>
+                    
+                
+                     </div>
+
+            <!-- card-3  -->
+                     <div class="bg-white py-5  rounded-lg">
+                        <!-- title  -->
+                         <div class="border-b-2 border-dashed border-gray-300 px-9">
+                            <h2 class="text-2xl text-[#232931] font-bold py-6">Question-3: What is event delegation?
+                            </h2>
+                         </div>
+                         <!-- ans  -->
+                          <p class="line-height text-xl font-medium text-[#9da3a8] text-gray-600 py-6 px-9 ">
+                            Event delegation is a technique that makes DOM event handling in Javascript more easier and efficient.Normally when we add a event handler it is directly associated with a specific dom element.But when there is too many child elements,then it is unnecessary to attach event handler for each elements and Here works event delegation,we adds the event handler to it's parents node and it's reduced unnecessary Event Handling.
+                          </p>
+                     </div>    
              <!-- card-4  -->
-             <div class="bg-white py-5 px-9 rounded-lg">
-                <!-- title  -->
-                 <div class="border-b-3 border-dotted border-r-emerald-700 ">
-                    <h2 class="text-2xl text-[#232931] font-bold py-6">what is html</h2>
-                 </div>
-                 <!-- ans  -->
-                  <p class="text-xl font-medium text-[#9da3a8] py-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio corrupti cumque eaque, atque ea inventore earum ab aut maxime odit quis tenetur, beatae reiciendis similique illo tempore ex sint!</p>
-             </div>            
-             <!-- card-5  -->
-             <div class="bg-white py-5 px-9 rounded-lg">
-                <!-- title  -->
-                 <div class="border-b-3 border-dotted border-r-emerald-700 ">
-                    <h2 class="text-2xl text-[#232931] font-bold py-6">what is html</h2>
-                 </div>
-                 <!-- ans  -->
-                  <p class="text-xl font-medium text-[#9da3a8] py-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio corrupti cumque eaque, atque ea inventore earum ab aut maxime odit quis tenetur, beatae reiciendis similique illo tempore ex sint!</p>
+                   <div class=" bg-[#ddd] py-5  rounded-lg">
+                    <!-- title  -->
+                     <div class="border-b-2 border-dashed border-gray-300 px-9">
+                        <h2 class="text-2xl text-[#232931] font-bold py-6">Question-2: What is event bubbling in the DOM ?
+                        </h2>
+                     </div>
+                     <!-- ans  -->
+                     <p class="line-height text-xl font-medium text-[#9da3a8] text-gray-600 py-6 px-9 ">
+                        Event Bubbling is a process in DOM where an event starts from a target element(where a event occurs such as a clicked or a interaction is happened) then it's starts to moves up(bubbling) to it's parent element untill it reaches the root element.
+                      </p>
+                   
+                         </div>
+            
+          <!-- card-5  -->
+          <div class="bg-white py-5  rounded-lg">
+            <!-- title  -->
+             <div class="border-b-2 border-dashed border-gray-300 px-9">
+                <h2 class="text-2xl text-[#232931] font-bold py-6">Question-5: How do you create,add, and remove elements using Javascript?
+                </h2>
              </div>
+             <!-- ans  -->
+              <p class="line-height text-xl font-medium text-[#9da3a8] text-gray-600 py-6 px-9 ">
+               <span>Here are the process of create,add and remove elements using Javascript:</span>
+               
+                <span>1.create:</span>
+                To create a elements using Javascript we have to use document.createElement('value'),inside bracket we have to give the tag name or element that we want to create.
+                <span>2.add:</span>
+                we can add elements using Javascript using some different method these are:
+                    1.appendChild():This adds as last child to parent.
+                    2.append():This add multiple elements or text.
+                    3.prepend():This add element as first child. 
+                These are some way to add elements.
+
+                <span>3.add:</span>
+                To remove an element using Javascript we can use remove() method,this will remove elements from the document.
+              </p>
+         </div> 
         </section>
     </main>
     <script src="./js/new-window.js"></script>
