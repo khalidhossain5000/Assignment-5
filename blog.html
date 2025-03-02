@@ -32,10 +32,13 @@
         .line-height{
             line-height: 39px;
         }
+        .line-height-2{
+            line-height: 45px;
+        }
     </style>
 </head>
 <body class="poppins-font container mx-auto bg-[#f4f7ff]">
-    <header class="py-6 bg-white shadow-xl p-9 rounded-2xl mt-5 flex items-center justify-between">
+    <header class="py-6 bg-white shadow-sm p-9 rounded-2xl mt-5 flex items-center justify-between">
         <!-- logo and text section  -->
         <div class="flex items-center">
             <img class="w-8" src="./assets/logo.png" alt="">
@@ -58,36 +61,36 @@
                     </h2>
                  </div>
                  <!-- ans  -->
-                  <p class="line-height text-xl font-medium text-[#9da3a8] text-gray-600 py-6 px-9 "><span class="text-[30px] text-gray-900 font-bold">There are several ways to select an element in the DOM(Document Object Model) These Are: </span>
+                  <p class="line-height-2 text-xl font-medium text-[#9da3a8] text-gray-700 py-6 px-9 "><span class="text-[30px] text-gray-900 font-bold ">There are several ways to select an element in the DOM(Document Object Model) These Are: </span><br>
                   </span> <br>
-                    <span class="font-bold text-black">1.Tag Name(getElementsByTagName):</span>in Javascript we can use Tag Name to access an element.For that we have to use getElementsByTagName('tagName'). <br>
-                    <span class="font-bold text-gray-900">02.By Id(getElementById):</span>We can select an element using it's Id.For that we have to use getElementById('id') in js.   <br>
-                    <span class="font-bold text-gray-900">03.By ClassName(getElementsByClassName):</span>We can select an element using it's ClassName.For that we have to use getElementsByClassName('ClassName') in js.This will provide us a html collection with all element that is using this ClassName. <br>
-                    <span class="font-bold text-gray-900">04.By querySelector(querySelector):</span>We can select an element by css selector for that we can use querySelector('selector').This will give us the first element using that selector. <br>
-                    <span class="font-bold text-gray-900">05.By querySelectorAll(querySelectorAll):</span>We can select an element by css selector for that we can use querySelectorAll('selector').This will give us all the element using and matching that selector. <br>
-                    <span class="text-xl text-gray-700 font-bold">These are the most used and popular way to select an element in the DOM.</span>
+                    <span class="font-bold text-gray-900">1.Tag Name(getElementsByTagName):</span> in Javascript we can use Tag Name to access an element.For that we have to use getElementsByTagName('tagName'). <br>
+                    <span class="font-bold text-gray-900">02.By Id(getElementById):</span> We can select an element using it's Id.For that we have to use getElementById('id') in js.   <br>
+                    <span class="font-bold text-gray-900">03.By ClassName(getElementsByClassName):</span> We can select an element using it's ClassName.For that we have to use getElementsByClassName('ClassName') in js.This will provide us a html collection with all element that is using this ClassName. <br>
+                    <span class="font-bold text-gray-900">04.By querySelector(querySelector):</span> We can select an element by css selector for that we can use querySelector('selector').This will give us the first element using that selector. <br>
+                    <span class="font-bold text-gray-900">05.By querySelectorAll(querySelectorAll):</span> We can select an element by css selector for that we can use querySelectorAll('selector').This will give us all the element using and matching that selector. <br>
+                    <span class="text-xl text-gray-900 font-bold">These are the most used and popular way to select an element in the DOM.</span>
                   </p>
              </div>           
          <!-- card-2  -->
-             <div class=" bg-[#ddd] py-5  rounded-lg">
+             <div class=" bg-[#ddddddac] py-5  rounded-lg pb-12">
                 <!-- title  -->
-                 <div class="border-b-2 border-dashed border-gray-300 px-9">
+                 <div class="border-b-2 border-dashed border-gray-300 mb-8 px-9">
                     <h2 class="text-2xl text-[#232931] font-bold py-6">Question-2: What is the difference between innerHTML, innerText, and textContent ?
-                    </h2>
+                    </h2> <br>
                  </div>
                  <!-- ans  -->
-                <table class="w-[95%] border-1 border-l-gray-500 rounded-md mx-auto border-collapse">
+                <table class="w-[93%] border-1 border-l-gray-500 rounded-md mx-auto border-collapse">
                     <thead class="bg-red-400 text-2xl">
                         <tr>
-                            <th class="py-5 px-3 border-r border-blue-800">Sl</th>
-                            <th class="py-5 px-3 border-r border-blue-800">innerHTML</th>
-                            <th class="py-5 px-3 border-r border-blue-800">innerText</th>
-                            <th class="py-5 px-3 border-r border-blue-800">textContent</th>
+                            <th class="py-5 px-3 border-r border-gray-700">Sl</th>
+                            <th class="py-5 px-3 border-r border-gray-700">innerHTML</th>
+                            <th class="py-5 px-3 border-r border-gray-700">innerText</th>
+                            <th class="py-5 px-3 border-r border-gray-700">textContent</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-blue-300">
-                            <td class="border-r  py-5 px-3 text-xl font-bold text-black">01</td>
+                        <tr class="bg-blue-200">
+                            <td class="border-r py-5 px-3 text-xl font-bold text-black">01</td>
                             <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">innerHTML is a Javascript Property that gets or sets the HTML content of an element.It means we can access a html structure from an element,including HTML Tag(like-p,div,h1 etc..) or we can set or create a html structure using innerHTML.</td>
                             <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">innerText is a Javascript Property that gets the inner text from an element also we can set Text inside of an element using innerText property.It means by using innerText we can get all the text from an element and set text inside an element.</td>
                             <td class="border-r text-xl py-5 px-9  font-bold text-black line-height">textContent is a Javascript Property that gets all the content from an element including spacing,hidden text but it gives it without tag also we can set text or content inside an element using textContent Property.it only returns us with raw text.</td>
@@ -113,10 +116,10 @@
                           </p>
                      </div>    
              <!-- card-4  -->
-                   <div class=" bg-[#ddd] py-5  rounded-lg">
+                   <div class="bg-[#ddddddac] py-5  rounded-lg">
                     <!-- title  -->
                      <div class="border-b-2 border-dashed border-gray-300 px-9">
-                        <h2 class="text-2xl text-[#232931] font-bold py-6">Question-2: What is event bubbling in the DOM ?
+                        <h2 class="text-2xl text-[#232931] font-bold py-6">Question-4: What is event bubbling in the DOM ?
                         </h2>
                      </div>
                      <!-- ans  -->
@@ -135,18 +138,18 @@
              </div>
              <!-- ans  -->
               <p class="line-height text-xl font-medium text-[#9da3a8] text-gray-600 py-6 px-9 ">
-               <span>Here are the process of create,add and remove elements using Javascript:</span>
+               <span class="text-3xl font-bold text-gray-900">Here are the process of create,add and remove elements using Javascript:</span><br>
                <br>
-                <span>1.create:</span>
+                <span class="text-xl font-bold text-gray-800">1.create:</span>
                 To create a elements using Javascript we have to use document.createElement('value'),inside bracket we have to give the tag name or element that we want to create. <br>
-                <span>2.add:</span>
+                <span class="text-xl font-bold text-gray-800">2.add:</span>
                 we can add elements using Javascript using some different method these are: <br>
                     1.appendChild():This adds as last child to parent. <br>
                     2.append():This add multiple elements or text. <br>
                     3.prepend():This add element as first child. <br>
                 These are some way to add elements. <br>
 
-                <span>3.add:</span>
+                <span class="text-xl font-bold text-gray-800">3.add:</span>
                 To remove an element using Javascript we can use remove() method,this will remove elements from the document.
               </p>
          </div> 
