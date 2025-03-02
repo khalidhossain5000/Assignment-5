@@ -11,6 +11,16 @@ let convertedTaskAssigned=parseInt(taskAssigned);
 const headerTask=document.getElementById('header-task').innerText;//this is header task of 23
 let convertedHeaderTask=parseInt(headerTask);
 
+//succes alert
+let completedButton=0;
+const totalBtn=document.getElementsByClassName('card-btn-event').length;
+
+function handleBtnClicked(){
+    completedButton++;
+    if(completedButton===totalBtn){
+        alert("Congrats!!!You have completed all the current task")
+    }
+}
 //board update function 
 function completedEvent(btnId,titleId) {
     const title=document.getElementById(titleId).innerText;
@@ -35,10 +45,9 @@ function completedEvent(btnId,titleId) {
             const disable=document.getElementById(btnId);
             disable.disabled=true;
             disable.classList.add('bg-gray-500')
-          
+            handleBtnClicked()
            return activityHistoryField.appendChild(div);
 
 })
 
 }
-

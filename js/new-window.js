@@ -3,6 +3,5 @@
 document.getElementById('home-page-return')
 .addEventListener('click',function(){
     window.location.href='./index.html'
-
-    
+ 
 })
